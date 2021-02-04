@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>web Scrapper</title>
+ 
+     <meta charset="UTF-8">
+      
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/css/templatemo-digital-trend.css">
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg position-absolute">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+              Scrapper Menia
+            </a>
+ 
+    </nav>
+
+
+     <!-- Scrap -->
+     <section class="contact section-padding">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-6 mx-auto col-md-7 col-12 py-5 mt-5 text-center" data-aos="fade-up">
+                      <h1 class="mb-4">  <strong>Scrapped</strong> <strong>file</strong> is ready to download </h1>
+                    </div> 
+                    <div class="col-lg-8 mx-auto col-md-10 col-12"> 
+                      <form action="Process_url" method="POST" class="contact-form" data-aos="fade-up" data-aos-delay="300" role="form">
+                        <div class="row">
+                           
+                          <div class="col-lg-5 mx-auto col-7">
+                            <button type="button"class="form-control" id="submit-button" onclick="document.getElementById('link').click()">Download</button>
+                            <a id="link" href="{{url_for('download_file')}}" hidden></a>
+			                          </div>
+                        </div> 
+                      </form>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+ 
+     <script src="../static/js/jquery.min.js"></script>
+     <script src="../static/js/bootstrap.min.js"></script>
+     <script src="../static/js/aos.js"></script>
+     <script src="../static/js/owl.carousel.min.js"></script>
+     <script src="../static/js/smoothscroll.js"></script>
+     <script src="../static/js/custom.js"></script>
+
+
+</body>
+</html>
